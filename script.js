@@ -8,7 +8,7 @@ document.getElementById("senha").value;
 
 if(usuario === "idoso" && senha === "123"){
 
-window.location.href = "home.html";
+window.location.href = "exercicios.html";
 
 }else{
 
