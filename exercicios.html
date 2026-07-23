@@ -1,1 +1,75 @@
-<h1>Execicios</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercícios do Dia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Exercícios do Dia</h1>
+
+        <div class="card-exercicio">
+
+            <h2 id="nomeExercicio">
+                Alongamento dos Braços
+            </h2>
+
+            <img id="imagemExercicio" src="imagens/alongamento.jpg" alt="Imagem do exercício">
+
+            <h3>Como fazer</h3>
+
+            <p id="descricao">
+                Levante lentamente os braços acima da cabeça.
+                Permaneça nessa posição por alguns segundos
+                e retorne lentamente.
+            </p>
+
+            <div class="informacoes">
+
+                <p>
+                    <strong>Repetições:</strong>
+                    <span id="repeticoes">10 vezes</span>
+                </p>
+
+                <p>
+                    <strong>Séries:</strong>
+                    <span id="series">3 séries</span>
+                </p>
+
+            </div>
+
+            <div class="checkbox">
+
+                <input type="checkbox" id="realizado">
+
+                <label for="realizado">
+                    Já realizei este exercício
+                </label>
+
+            </div>
+
+            <button onclick="concluirExercicio()">
+
+                Salvar Progresso
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="exercicios.js"></script>
+
+</body>
+
+</html>
