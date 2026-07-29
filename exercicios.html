@@ -66,6 +66,45 @@
 
         </div>
 
+        <hr>
+
+        <h2>Como você está se sentindo?</h2>
+
+        <p>
+            Caso tenha sentido algum desconforto durante o exercício,
+            registre abaixo.
+        </p>
+
+        <label for="desconforto">
+            Sentiu algum desconforto?
+        </label>
+
+        <select id="desconforto">
+
+            <option value="">Selecione</option>
+
+            <option>Não</option>
+
+            <option>Dor leve</option>
+
+            <option>Cansaço</option>
+
+            <option>Tontura</option>
+
+            <option>Outro</option>
+
+        </select>
+
+        <textarea id="observacao" placeholder="Caso deseje, descreva o que sentiu."></textarea>
+
+        <button onclick="registrarDesconforto()">
+            Registrar
+        </button>
+
+        <button onclick="encerrarTreino()">
+            Encerrar Treino
+        </button>
+
     </div>
 
     <script src="exercicios.js"></script>

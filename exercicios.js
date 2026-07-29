@@ -71,4 +71,54 @@ function concluirExercicio() {
     }
 }
 
+
+
+function registrarDesconforto(){
+
+    const desconforto =
+    document.getElementById("desconforto").value;
+
+    const observacao =
+    document.getElementById("observacao").value;
+
+    if(desconforto === ""){
+
+        alert("Selecione uma opção.");
+
+        return;
+
+    }
+
+    if(desconforto === "Não"){
+
+        alert("Ótimo! Continue seguindo as orientações dos exercícios.");
+
+    }else{
+
+        alert(
+            "Registro salvo.\n\nCaso o desconforto permaneça, interrompa os exercícios e procure orientação de um profissional de saúde."
+        );
+
+    }
+
+    console.log("Desconforto:", desconforto);
+    console.log("Observação:", observacao);
+
+}
+
+
+function encerrarTreino(){
+
+    const confirmar =
+    confirm("Deseja realmente encerrar o treino?");
+
+    if(confirmar){
+
+        alert("Treino encerrado.\nAté a próxima!");
+
+        window.location.href = "index.html";
+
+    }
+
+}
 window.onload = carregarExercicio;
