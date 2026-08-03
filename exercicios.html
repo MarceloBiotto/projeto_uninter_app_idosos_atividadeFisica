@@ -4,6 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Exercícios do Dia</title>
@@ -20,30 +21,30 @@
 
         <div class="card-exercicio">
 
-            <h2 id="nomeExercicio">
-                Alongamento dos Braços
-            </h2>
+            <h2 id="nomeExercicio"></h2>
 
-            <img id="imagemExercicio" src="imagens/alongamento.jpg" alt="Imagem do exercício">
+            <img id="imagemExercicio" src="" alt="Imagem do exercício">
 
             <h3>Como fazer</h3>
 
-            <p id="descricao">
-                Levante lentamente os braços acima da cabeça.
-                Permaneça nessa posição por alguns segundos
-                e retorne lentamente.
-            </p>
+            <p id="descricao"></p>
 
             <div class="informacoes">
 
                 <p>
+
                     <strong>Repetições:</strong>
-                    <span id="repeticoes">10 vezes</span>
+
+                    <span id="repeticoes"></span>
+
                 </p>
 
                 <p>
+
                     <strong>Séries:</strong>
-                    <span id="series">3 séries</span>
+
+                    <span id="series"></span>
+
                 </p>
 
             </div>
@@ -53,7 +54,9 @@
                 <input type="checkbox" id="realizado">
 
                 <label for="realizado">
+
                     Já realizei este exercício
+
                 </label>
 
             </div>
@@ -64,46 +67,13 @@
 
             </button>
 
+            <button onclick="encerrarTreino()">
+
+                Encerrar Treino
+
+            </button>
+
         </div>
-
-        <hr>
-
-        <h2>Como você está se sentindo?</h2>
-
-        <p>
-            Caso tenha sentido algum desconforto durante o exercício,
-            registre abaixo.
-        </p>
-
-        <label for="desconforto">
-            Sentiu algum desconforto?
-        </label>
-
-        <select id="desconforto">
-
-            <option value="">Selecione</option>
-
-            <option>Não</option>
-
-            <option>Dor leve</option>
-
-            <option>Cansaço</option>
-
-            <option>Tontura</option>
-
-            <option>Outro</option>
-
-        </select>
-
-        <textarea id="observacao" placeholder="Caso deseje, descreva o que sentiu."></textarea>
-
-        <button onclick="registrarDesconforto()">
-            Registrar
-        </button>
-
-        <button onclick="encerrarTreino()">
-            Encerrar Treino
-        </button>
 
     </div>
 
