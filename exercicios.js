@@ -39,7 +39,21 @@ const exercicios = [
 ];
 
 let exercicioAtual = 0;
+function atualizarProgresso(){
 
+    const total = exercicios.length;
+
+    const atual = exercicioAtual + 1;
+
+    const porcentagem = (exercicioAtual / total) * 100;
+
+    document.getElementById("progressoTexto").textContent =
+        `Exercício ${atual} de ${total}`;
+
+    document.getElementById("progresso").style.width =
+        porcentagem + "%";
+
+}
 function carregarExercicio() {
 
     const ex = exercicios[exercicioAtual];
@@ -57,7 +71,7 @@ function carregarExercicio() {
     document.getElementById("imagemExercicio").style.display = "block";
 
     document.getElementById("realizado").checked = false;
-
+    atualizarProgresso();
 }
 
 function concluirExercicio() {

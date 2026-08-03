@@ -13,6 +13,14 @@ function finalizar(){
         "Obrigado!\nSeu treino foi registrado."
     );
 
-    window.location.href = "index.html";
+    // window.location.href = "index.html";
+
+    document.getElementById("progresso").style.width = "100%";
+
+setTimeout(() => {
+
+    window.location.href = "encerrar.html";
+
+}, 800);
 
 }
