@@ -20,3 +20,5 @@ function login() {
     }
 
 }
+
+localStorage.setItem("usuarioLogado", usuario);

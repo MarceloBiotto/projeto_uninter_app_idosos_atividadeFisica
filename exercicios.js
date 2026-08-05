@@ -59,7 +59,10 @@ function carregarExercicio() {
 
     document.getElementById("saudacao").textContent =
     `Olá, ${usuario}!`;
-    
+    if (usuario) {
+    document.getElementById("saudacao").textContent =
+        `Olá, ${usuario}!`;
+    }
     const ex = exercicios[exercicioAtual];
 
     document.getElementById("nomeExercicio").textContent = ex.nome;
