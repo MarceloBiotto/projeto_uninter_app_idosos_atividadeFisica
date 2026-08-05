@@ -8,6 +8,9 @@ function login() {
         (usuario.toLowerCase() === "dulce" && senha === "123")
     ) {
 
+        // Salva o nome do usuário
+        localStorage.setItem("usuarioLogado", usuario);
+
         window.location.href = "exercicios.html";
 
     } else {

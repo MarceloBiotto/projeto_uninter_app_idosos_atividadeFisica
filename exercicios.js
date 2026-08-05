@@ -9,7 +9,7 @@ const exercicios = [
 
         series: "3 séries",
 
-        imagem: "imagens/alongamento.jpg"
+        imagem: "imagens/alongamentoBraco.png"
     },
 
     {
@@ -21,7 +21,7 @@ const exercicios = [
 
         series: "2 séries",
 
-        imagem: "imagens/agachamento.jpg"
+        imagem: "imagens/agachamentoAssistido.png"
     },
 
     {
@@ -33,16 +33,16 @@ const exercicios = [
 
         series: "2 séries",
 
-        imagem: "imagens/joelhos.jpg"
+        imagem: "imagens/elevacaoJoelhos.png"
     }
 
 ];
 
 let exercicioAtual = 0;
-function atualizarProgresso(){
+
+function atualizarProgresso() {
 
     const total = exercicios.length;
-
     const atual = exercicioAtual + 1;
 
     const porcentagem = (exercicioAtual / total) * 100;
@@ -52,10 +52,14 @@ function atualizarProgresso(){
 
     document.getElementById("progresso").style.width =
         porcentagem + "%";
-
 }
-function carregarExercicio() {
 
+function carregarExercicio() {
+    const usuario = localStorage.getItem("usuarioLogado");
+
+    document.getElementById("saudacao").textContent =
+    `Olá, ${usuario}!`;
+    
     const ex = exercicios[exercicioAtual];
 
     document.getElementById("nomeExercicio").textContent = ex.nome;
@@ -71,6 +75,7 @@ function carregarExercicio() {
     document.getElementById("imagemExercicio").style.display = "block";
 
     document.getElementById("realizado").checked = false;
+
     atualizarProgresso();
 }
 
@@ -94,7 +99,13 @@ function concluirExercicio() {
 
     } else {
 
-        window.location.href = "encerrar.html";
+        document.getElementById("progresso").style.width = "100%";
+
+        setTimeout(() => {
+
+            window.location.href = "encerrar.html";
+
+        }, 800);
 
     }
 
@@ -102,9 +113,7 @@ function concluirExercicio() {
 
 function encerrarTreino() {
 
-    const confirmar = confirm("Deseja realmente encerrar o treino?");
-
-    if (confirmar) {
+    if (confirm("Deseja realmente encerrar o treino?")) {
 
         window.location.href = "encerrar.html";
 
