@@ -45,7 +45,7 @@ const exercicios = [
 
         series: "2 a 3 séries",
 
-        imagem: "imagens/elevacaoCalcanhares.jpg"
+        imagem: "imagens/elevacaoCalcanhares.png"
     },
 
     {
@@ -57,7 +57,7 @@ const exercicios = [
 
         series: "2 a 3 séries",
 
-        imagem: "imagens/rotacaoOmbros.jpg"
+        imagem: "imagens/rotacaoOmbros.png"
     }
 
 ];
