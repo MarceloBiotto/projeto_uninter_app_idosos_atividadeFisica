@@ -80,6 +80,10 @@ function carregarExercicio() {
     document.getElementById("realizado").checked = false;
 
     atualizarProgresso();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 function concluirExercicio() {

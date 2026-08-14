@@ -19,32 +19,50 @@
 
         <h1>Treino Finalizado</h1>
 
+        <h2 id="saudacao"></h2>
+
         <p>
-
             Parabéns por concluir seu treino!
-
         </p>
 
         <h2>Como você se sentiu?</h2>
 
         <select id="desconforto">
 
-            <option value="">Selecione</option>
+            <option value="">
+                Selecione uma opção
+            </option>
 
-            <option>Não senti desconforto</option>
+            <option value="Não senti desconforto">
+                Não senti desconforto
+            </option>
 
-            <option>Cansaço leve</option>
+            <option value="Cansaço leve">
+                Cansaço leve
+            </option>
 
-            <option>Dor muscular</option>
+            <option value="Dor muscular">
+                Dor muscular
+            </option>
 
-            <option>Tontura</option>
+            <option value="Tontura">
+                Tontura
+            </option>
 
-            <option>Outro</option>
+            <option value="Outro">
+                Outro
+            </option>
 
         </select>
 
-        <textarea id="observacao" placeholder="Caso queira, descreva como se sentiu.">
-</textarea>
+        <textarea id="observacao" placeholder="Caso queira, descreva como se sentiu durante o treino.">
+        </textarea>
+
+        <button onclick="enviarWhatsApp()">
+
+            Enviar pelo WhatsApp
+
+        </button>
 
         <button onclick="finalizar()">
 
